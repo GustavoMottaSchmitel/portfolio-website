@@ -149,10 +149,10 @@ export default function Home() {
             className="flex flex-wrap gap-4 pt-4"
           >
             <button className="bg-[#34D399] hover:bg-[#2FBA8A] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-              Get In Touch
+              Me conheça
             </button>
             <button className="border-2 border-[#34D399] text-[#34D399] hover:bg-[#34D399]/10 font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-              Browse Projects
+              Projetos
             </button>
           </motion.div>
         </motion.div>
