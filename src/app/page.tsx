@@ -1,103 +1,181 @@
+'use client'
+
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="relative min-h-screen bg-gradient-to-b from-[#081F3F] to-[#0C2B5C] overflow-hidden">
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 w-full flex justify-center py-4 bg-[#081F3F]/90 backdrop-blur-sm shadow-lg z-50">
+        <div className="flex gap-8">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <Link
+              href="/"
+              className="text-gray-100 font-bold text-xl md:text-2xl transition-all duration-300 hover:scale-105 hover:text-[#34D399]"
+            >
+              Inicio
+            </Link>
+          </motion.div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <Link
+              href="/projects"
+              className="text-gray-100 font-bold text-xl md:text-2xl transition-all duration-300 hover:scale-105 hover:text-[#34D399]"
+            >
+              Projetos
+            </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
           >
-            Read our docs
-          </a>
+            <Link
+              href="/about"
+              className="text-gray-100 font-bold text-xl md:text-2xl transition-all duration-300 hover:scale-105 hover:text-[#34D399]"
+            >
+              Sobre
+            </Link>
+          </motion.div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      </nav>
+
+      {/* Main Content */}
+      <div className="container mx-auto px-4 h-screen flex flex-col md:flex-row items-center justify-between gap-8 pt-20">
+        {/* Left Column - Text Content */}
+        <motion.div
+          className="md:w-1/2 space-y-6 md:space-y-8"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="text-2xl md:text-3xl text-gray-200"
+          >
+            Olá, eu sou o Gustavo 👋
+          </motion.h2>
+
+          {/* Animated Title */}
+          <div className="relative">
+            <motion.div
+              className="relative inline-block"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
+            >
+              <h3 className="text-4xl md:text-6xl font-extrabold text-white font-poppins">
+                FullStack
+              </h3>
+
+              <motion.h3
+                className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text font-poppins absolute top-0 left-0 w-full"
+                initial={{
+                  backgroundPosition: '100% 0%',
+                  maskPosition: '100% 0%'
+                }}
+                animate={{
+                  backgroundPosition: '-100% 0%',
+                  maskPosition: '-100% 0%',
+                  transition: {
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }
+                }}
+                style={{
+                  backgroundImage: 'linear-gradient(90deg, transparent, #4ade80, transparent)',
+                  backgroundSize: '200% 100%',
+                  maskImage: 'linear-gradient(90deg, transparent, white 20%, white 80%, transparent)',
+                  maskSize: '200% 100%',
+                  WebkitMaskImage: 'linear-gradient(90deg, transparent, white 20%, white 80%, transparent)',
+                  WebkitMaskSize: '200% 100%',
+                }}
+              >
+                FullStack
+              </motion.h3>
+            </motion.div>
+
+            <motion.h4
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+              className="text-3xl md:text-5xl font-bold text-[#34D399] mt-2"
+            >
+              Developer Junior
+            </motion.h4>
+          </div>
+
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.0, duration: 2.5, ease: "easeInOut" }}
+            className="text-lg md:text-xl text-gray-300 leading-relaxed"
+          >
+            {`Sou um entusiasta do desenvolvimento completo, apaixonado tanto pelo front-end quanto pelo back-end. Gosto de mergulhar na estrutura lógica por trás do código e, ao mesmo tempo, me dedico à criação de interfaces elegantes e funcionais.`.split('').map((letter, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  delay: 1.0 + index * 0.02,
+                  duration: 0.1
+                }}
+              >
+                {letter}
+              </motion.span>
+            ))}
+          </motion.p>
+
+          {/* Buttons */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2, duration: 0.8 }}
+            className="flex flex-wrap gap-4 pt-4"
+          >
+            <button className="bg-[#34D399] hover:bg-[#2FBA8A] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+              Get In Touch
+            </button>
+            <button className="border-2 border-[#34D399] text-[#34D399] hover:bg-[#34D399]/10 font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+              Browse Projects
+            </button>
+          </motion.div>
+        </motion.div>
+
+        {/* Right Column - Photo */}
+        <motion.div
+          className="hidden md:flex md:w-1/2 justify-center items-center"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-[#34D399]/50 overflow-hidden shadow-2xl">
+            <Image
+              src="/imagem.jpg"
+              alt="Gustavo"
+              width={500}
+              height={500}
+              className="object-cover w-full h-full"
+              priority
+            />
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 }
