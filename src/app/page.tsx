@@ -148,12 +148,22 @@ export default function Home() {
             transition={{ delay: 1.2, duration: 0.8 }}
             className="flex flex-wrap gap-4 pt-4"
           >
-            <button className="bg-[#34D399] hover:bg-[#2FBA8A] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-              Me conheça
-            </button>
-            <button className="border-2 border-[#34D399] text-[#34D399] hover:bg-[#34D399]/10 font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-              Projetos
-            </button>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                href="/about"
+                className="block bg-[#34D399] hover:bg-[#2FBA8A] text-white font-bold py-3 px-8 rounded-lg transition-all duration-300"
+              >
+                Me conheça
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                href="/projects"
+                className="block border-2 border-[#34D399] text-[#34D399] hover:bg-[#34D399]/10 font-bold py-3 px-8 rounded-lg transition-all duration-300"
+              >
+                Projetos
+              </Link>
+            </motion.div>
           </motion.div>
         </motion.div>
 

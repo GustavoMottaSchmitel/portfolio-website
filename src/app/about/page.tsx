@@ -136,9 +136,7 @@ export default function AboutPage() {
                             transition={{ delay: 0.6, duration: 0.8 }}
                             className="text-lg text-gray-300 leading-relaxed max-w-2xl"
                         >
-                            Apaixonado por criar soluções digitais que combinam design elegante com funcionalidade robusta.
-                            Com 2 anos de experiência em desenvolvimento web, me especializo em construir aplicações
-                            modernas com React, Next.js e Node.js.
+                            Mesmo com poucos meses de experiência, já sou completamente apaixonado por transformar ideias em sistemas robustos, funcionais e com identidade única. Estou em constante evolução, e coloco dedicação total em cada projeto para entregar soluções de qualidade que realmente fazem a diferença.
                         </motion.p>
                     </div>
                 </motion.div>

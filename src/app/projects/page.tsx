@@ -65,6 +65,23 @@ const projects: Project[] = [
       { type: 'video', url: '/projects/mario-game/video.mkv', alt: 'Mario Game Video' }
     ]
   },
+  {
+    id: 5,
+    title: "Your Nail Design",
+    description: "Página de apresentação moderna, pensada para destacar projetos e atrair clientes de pequenos negócios com profissionalismo e impacto visual.",
+    shortDescription: "Your Nail Design",
+    tags: ["HTML", "CSS", "JAVASCRIPT", "TAILWINDCSS"],
+    mainImage: "/projects/your-nail-design/imagem1.png",
+    media: [
+      { type: 'image', url: '/projects/your-nail-design/imagem1.png', alt: 'Your Nail Design Imagem1' },
+      { type: 'image', url: '/projects/your-nail-design/imagem2.png', alt: 'Your Nail Design Imagem2' },
+      { type: 'image', url: '/projects/your-nail-design/imagem3.png', alt: 'Your Nail Design Imagem3' },
+      { type: 'image', url: '/projects/your-nail-design/imagem4.png', alt: 'Your Nail Design Imagem4' },
+      { type: 'image', url: '/projects/your-nail-design/imagem5.png', alt: 'Your Nail Design Imagem5' },
+      { type: 'image', url: '/projects/your-nail-design/imagem6.png', alt: 'Your Nail Design Imagem6' },
+      { type: 'video', url: '/projects/your-nail-design/video1.mkv', alt: 'Your Nail Design Video' }
+    ]
+  },
 ]
 
 function Navbar() {
