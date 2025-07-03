@@ -82,6 +82,19 @@ const projects: Project[] = [
       { type: 'video', url: '/projects/your-nail-design/video1.mkv', alt: 'Your Nail Design Video' }
     ]
   },
+  {
+    id: 6,
+    title: "MediFlux",
+    description: "Página de apresentação moderna, pensada para destacar projetos e atrair clientes de pequenos negócios com profissionalismo e impacto visual.",
+    shortDescription: "MediFlux",
+    tags: ["HTML", "CSS", "JAVASCRIPT", "TAILWINDCSS"],
+    mainImage: "/projects/mediflux/image1.png",
+    media: [
+      { type: 'image', url: '/projects/mediflux/image1.png', alt: 'MediFlux Image'},
+      { type: 'video', url: '/projects/mediflux/video1.mkv', alt: 'Mediflux Video 1' },
+      { type: 'video', url: '/projects/mediflux/video2.mkv', alt: 'MEdiFlux Video 2' }
+    ]
+  },
 ]
 
 function Navbar() {
