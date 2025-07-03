@@ -69,7 +69,7 @@ const projects: Project[] = [
     id: 5,
     title: "Your Nail Design",
     description: "Página de apresentação moderna, pensada para destacar projetos e atrair clientes de pequenos negócios com profissionalismo e impacto visual.",
-    shortDescription: "Your Nail Design",
+    shortDescription: "Your Nail Design - https://mottadeveloper.short.gy/YourNailDesign",
     tags: ["HTML", "CSS", "JAVASCRIPT", "TAILWINDCSS"],
     mainImage: "/projects/your-nail-design/imagem1.png",
     media: [
@@ -86,7 +86,7 @@ const projects: Project[] = [
     id: 6,
     title: "MediFlux",
     description: "Página de apresentação moderna, pensada para destacar projetos e atrair clientes de pequenos negócios com profissionalismo e impacto visual.",
-    shortDescription: "MediFlux",
+    shortDescription: "MediFlux -> https://mottadeveloper.short.gy/MediFlux",
     tags: ["HTML", "CSS", "JAVASCRIPT", "TAILWINDCSS"],
     mainImage: "/projects/mediflux/image1.png",
     media: [
