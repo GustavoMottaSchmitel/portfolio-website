@@ -30,6 +30,15 @@ const method = [
   ["04", "Evoluir", "Validar, aprender e preparar o produto para o próximo movimento."],
 ];
 
+const marqueeItems = [
+  "Estratégia digital",
+  "UX/UI Design",
+  "Landing pages",
+  "Sistemas sob medida",
+  "Produto digital",
+  "Desenvolvimento",
+];
+
 function ArrowIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 20 20">
@@ -172,6 +181,17 @@ export default function Home() {
           </div>
         </section>
 
+        <div className="capability-marquee" aria-label="Áreas de atuação">
+          <div className="marquee-track">
+            {[...marqueeItems, ...marqueeItems].map((item, index) => (
+              <span key={`${item}-${index}`}>
+                {item}
+                <i aria-hidden="true">✦</i>
+              </span>
+            ))}
+          </div>
+        </div>
+
         <section className="manifesto section-pad" aria-label="Posicionamento">
           <p className="section-kicker">O que eu construo</p>
           <p className="manifesto-copy" data-reveal>
@@ -188,11 +208,12 @@ export default function Home() {
           <div className="section-heading" data-reveal>
             <div>
               <p className="section-kicker">Trabalhos selecionados</p>
-              <h2>Projetos com<br />problemas reais.</h2>
+              <h2>Trabalho que<br />se movimenta.</h2>
             </div>
             <p>
-              Uma seleção de experiências em que estratégia, design e
-              tecnologia precisaram se encontrar.
+              Não é uma galeria de telas. É uma seleção do ecossistema digital
+              que concebi para transformar soluções complexas em experiências
+              claras, desejáveis e prontas para o mercado.
             </p>
           </div>
 
