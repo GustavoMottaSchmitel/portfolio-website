@@ -21,7 +21,7 @@ export const portfolioCases: PortfolioCase[] = [
     name: "ATA CRM",
     eyebrow: "Landing page de produto B2B",
     summary:
-      "Uma experiência comercial que organiza um ecossistema completo de atendimento, CRM, automações e inteligência artificial.",
+      "Uma experiência comercial que organiza um ecossistema completo de atendimento, relacionamento e automações.",
     contribution: ["Estratégia", "Copy", "Design", "Desenvolvimento"],
     desktopImage: "/cases/live/full/crm-desktop-full-v3.webp",
     mobileImage: "/cases/live/full/crm-mobile-full-v3.webp",
