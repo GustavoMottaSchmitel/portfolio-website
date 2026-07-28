@@ -9,6 +9,7 @@ Portfolio pessoal de **Gustavo Motta**, fundador da **NuvionTech**. Uma experiê
 | Projeto | Descrição | Site |
 | --- | --- | --- |
 | ATA CRM | Landing page para uma plataforma B2B de atendimento, CRM, automações e IA | [crm.atasistemas.com.br](https://crm.atasistemas.com.br) |
+| ATA Ponto | Experiência comercial para soluções de controle de jornada | [ponto.atasistemas.com.br](https://ponto.atasistemas.com.br) |
 | ATA Segurança | Apresentação de soluções de segurança eletrônica para empresas | [seguranca.atasistemas.com.br](https://seguranca.atasistemas.com.br) |
 | ATA Acesso | Landing page para controle de acesso e fluxo corporativo | [acesso.atasistemas.com.br](https://acesso.atasistemas.com.br) |
 
