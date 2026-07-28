@@ -1,25 +1,31 @@
 {
-  "name": "portfolio-website",
-  "version": "0.1.0",
+  "name": "gustavo-motta-portfolio",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:sites": "opennextjs-cloudflare build --skipWranglerConfigCheck",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "motion": "^12.20.1",
-    "next": "15.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "next": "^16.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@opennextjs/cloudflare": "^1.20.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "^16.2.4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "postcss": "^8.5.24",
+    "sharp": "^0.35.3"
   }
 }
